@@ -1,12 +1,10 @@
-import Background from "./components/Background"
-import Questions from "./components/Questions"
+import StartScreen from "./components/StartScreen"
 
 function App() {
 
   return (
     <>
-      <Background />
-      <Questions />
+      <StartScreen />
     </>
   )
 }

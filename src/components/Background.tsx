@@ -4,7 +4,12 @@ import MainMusic from '../assets/sounds/music.mp4'
 
 function Background() {
 
-    const [imgSize, setImgSize] = useState({width: innerWidth, height: innerHeight});
+    interface ImageSize {
+        width: number;
+        height: number;
+    }
+
+    const [imgSize, setImgSize] = useState<ImageSize>({width: innerWidth, height: innerHeight});
 
     useEffect(() => {
         const onWindowResize = (): void => setImgSize({ width: innerWidth, height: innerHeight });
