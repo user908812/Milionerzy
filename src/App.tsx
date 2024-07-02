@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <StartScreen />
+      <StartScreen enabled={true} autoMusicPlay={true}/>
     </>
   )
 }

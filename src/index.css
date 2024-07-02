@@ -34,7 +34,7 @@
   background-color: #1D0E24;
   width: 25%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 0;
   right: 0;
@@ -104,7 +104,6 @@
   margin-right: 10px;
   cursor: pointer;
 }
-
 .start-menu-btn {
   width: 300px;
   height: 50px;
@@ -113,4 +112,74 @@
   left: 50px;
   cursor: pointer;
 }
-
+#telephone-to-friend-gui {
+  width: 200px;
+  height: 280px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+} 
+#friend-image {
+  align-content: center;
+  border-radius: 60px;
+}
+.telephone-text-display {
+  color: #fff;
+  text-align: center;
+}
+#telephone-guest-name, #telephone-guest-city {
+  font-weight: bold;
+  background-color: blue;
+}
+#guest-pfp-container, #calltime-display-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#call-time-display {
+  font-weight: 900;
+  font-size: 40px;
+  background-color: darkblue;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid #464545;
+}
+#public-gui {
+  width: 250px;
+  height: 300px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.public-center {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0;
+}
+.column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column {
+  width: 30px;
+  background-color: #3d3b3b;
+}
+.highest {
+  height: 120px;
+}
+.column:not(.highest) {
+  height: 40px;
+}
+.column-answer {
+  margin-top: 10px;
+  color: #fff;
+}
+.correct .column {
+  background-color: #f39c12;
+}
